@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.node {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.node.left {
+    border-right: none;
+}
+
+.node.right {
+    border-left: none;
+}
+
+.node.odd {
+    background-color: #e6e6e6;
+}
+
+.node.even {
+    background-color: #cccccc;
+}
+
+.node.highlight {
+    background-color: yellow;
+}
